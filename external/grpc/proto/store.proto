@@ -1,0 +1,360 @@
+syntax = "proto3";
+package store;
+
+service Store {
+    rpc Example (ExampleRequest) returns (ExampleResponse);
+    rpc getCategoryByStoreId (getCategoryByStoreIdRequest) returns (getCategoryByStoreIdResponse);
+    rpc getCategories (getCategoriesRequest) returns (getCategoriesResponse);
+    rpc getCategoriesInfo (getCategoriesInfoRequest) returns (getCategoriesInfoResponse);
+    rpc getCommentRatingByIdStore (getCommentRatingByIdStoreRequest) returns (getCommentRatingByIdStoreResponse);
+    rpc getProductsToStore (getProductsToStoreRequest) returns (getProductsToStoreResponse);
+    rpc getRating (getRatingRequest) returns (getRatingResponse);
+    rpc countTotalProduct (countTotalProductRequest) returns (countTotalProductResponse);
+    rpc getCategoriesInArray (getCategoriesInArrayRequest) returns (getCategoriesInArrayResponse);
+    rpc getProductByStoreCategoriesByAdmin (getProductByStoreCategoriesByAdminRequest) returns (getProductByStoreCategoriesByAdminResponse);
+    rpc getCategoriesStoreByAdmin (getCategoriesStoreByAdminRequest) returns (getCategoriesStoreByAdminResponse);
+    rpc getTotalOrder (getTotalOrderRequest) returns (getTotalOrderResponse);
+    rpc updateSettingTransaction (updateSettingTransactionRequest) returns (updateSettingTransactionResponse);
+    rpc getTimeFireWork (getTimeFireWorkRequest) returns (getTimeFireWorkResponse);
+    rpc updateTimeFireWork (updateTimeFireWorkRequest) returns (updateTimeFireWorkResponse);
+    rpc getSimInfo (getSimInfoRequest) returns (getSimInfoResponse);
+    rpc createSimAccount (createSimAccountRequest) returns (createSimAccountResponse);
+    rpc getSales (getSalesRequest) returns (getSalesResponse);
+    rpc createCategoriesStore (createCategoriesStoreRequest) returns (createCategoriesStoreResponse);
+    rpc updateStatusTypeOrderById (updateStatusTypeOrderRequest) returns (updateStatusTypeOrderResponse);
+    rpc getProductInfo (getProductInfoRequest) returns (getProductInfoResponse);
+    rpc getOrderInfo (getOrderInfoRequest) returns (getOrderInfoResponse);
+}
+
+message getOrderInfoRequest {
+    string _id = 1;
+}
+
+message getOrderInfoResponse {
+    string order = 1;
+}
+
+message getProductInfoRequest {
+    string id = 1;
+}
+
+message getProductInfoResponse {
+    string _id = 1;
+    string storeId = 2;
+    string name = 3;
+    string description = 4;
+    int32 quantity = 5;
+    int32 price = 6;
+    repeated imageProduct images = 7;
+    int32 vetic = 8;
+    int32 special = 9;
+    int32 rate = 10;
+    int32 viewed = 11;
+    int32 stock_status = 12;
+    string model = 13;
+    string createdAt = 14;
+    repeated getCategoriesItemByAdmin categories = 15;
+}
+
+message updateStatusTypeOrderRequest {
+    string orderId = 1;
+    int32 status = 2;
+}
+
+message updateStatusTypeOrderResponse {
+    bool success = 1;
+}
+
+message getSalesRequest {
+    string staffId = 1;
+}
+
+message getSalesResponse {
+    int32 total = 1;
+}
+
+message createSimAccountRequest {
+    string _id = 1;
+    string name = 2;
+    string phone = 3;
+}
+
+message createSimAccountResponse {
+    string data = 1;
+}
+
+message getSimInfoRequest {
+    string _id = 1;
+}
+
+message getSimInfoResponse{
+    string _id = 1;
+    string user = 2;
+    string avatar = 3;
+    string name = 4;
+}
+
+message updateTimeFireWorkRequest {
+    string date = 1;
+    int32 UTChour = 2;
+    int32 UTCminute = 3;
+}
+
+message updateTimeFireWorkResponse {
+    bool success = 1;
+}
+
+message getTimeFireWorkRequest {
+
+}
+
+message getTimeFireWorkResponse {
+    int32 UTChour = 1;
+    int32 UTCminute = 2;
+}
+
+message updateSettingTransactionRequest {
+    string type = 1;
+}
+
+message updateSettingTransactionResponse {
+    int32 value = 1;
+}
+
+message getTotalOrderRequest {
+    string cond = 1;
+}
+
+message getTotalOrderResponse { 
+    int32 total = 1;
+}
+
+message getCategoriesInArrayRequest {
+    string categories = 1;
+}
+
+message getCategoriesInArrayItem {
+    string _id = 1;
+    string name = 2;
+    string image = 3;
+    string icon = 4;
+    string color = 5;
+}
+
+message getCategoriesItemByAdmin {
+    string _id = 1;
+    string name = 2;
+    imageProduct image = 3;
+    imageProduct icon = 4;
+    string color = 5;
+}
+
+message getCategoriesInArrayResponse {
+    repeated getCategoriesInArrayItem item = 1;
+}
+
+message countTotalProductRequest {
+    string storeId = 1;
+}
+
+message countTotalProductResponse {
+    int32 totalProduct = 1;
+    int32 totalRating = 2;
+}
+
+message getRatingRequest {
+    string targetId = 1;
+    int32 type = 2;
+    int32 limit = 3;
+    int32 skip = 4;
+    string sort = 5;
+}
+
+message getRatingItem {
+    string _id = 1;
+    string userId = 2;
+    string targetId = 3;
+    int32 star = 4;
+    int32 type = 5;
+    string content = 6;
+    string createdAt = 7;
+}
+
+message getRatingResponse {
+    repeated getRatingItem item = 1;
+    int32 page = 2;
+}
+
+message getProductsToStoreRequest {
+    string _id = 1;
+}
+
+message getProductsToStoreResponseItem {
+    string _id = 1;
+    string name = 2;
+    string avatar = 3;
+    int32 price = 4;
+    int32 vetic = 5;
+    int32 special = 6;
+    string description = 7;
+    int32 quantity = 8;
+    int32 stock = 9;
+    int32 rate = 10;
+}
+
+message getProductsToStoreResponse {
+    repeated getProductsToStoreResponseItem item = 1;
+}
+
+message getCommentRatingByIdStoreRequest {
+    string _id = 1;
+    int32 type = 2;
+}
+
+message getCommentRatingByIdStoreItem {
+    string _id = 1;
+    string content = 2;
+    int32 star = 3;
+}
+
+message getCommentRatingByIdStoreResponse {
+    repeated getCommentRatingByIdStoreItem item = 1;
+}
+
+message getCategoriesRequest {
+
+}
+
+message getCategoriesItem {
+    string _id = 1;
+    string name = 2;
+    string image = 3;
+    string description = 4;
+}
+
+message  getCategoriesResponse {
+    repeated getCategoriesItem item = 1;
+}
+
+message getCategoryByStoreIdRequest {
+    string id = 1;
+    string query = 2;
+    string sort = 3;
+}
+
+message getCategoryByStoreIdItem {
+    string _id = 1;
+    string name = 2;
+    string image = 3;
+    string parent = 4;
+    string description = 5;
+}
+
+message getCategoryByStoreIdResponse {
+    repeated getCategoryByStoreIdItem item = 1;
+}
+
+message Empty {}
+
+message ExampleRequest {
+    string name = 1;
+}
+
+
+message ExampleResponse {
+    string name = 1;
+}
+
+message getCategoriesInfoRequest {
+    string id = 1;
+}
+
+message getCategoriesInfoResponse {
+    string _id = 1;
+    string name = 2;
+    string description = 3;
+}
+
+message imageProduct {
+    string name = 1;
+    string large = 2;
+    string medium = 3;
+    string small = 4;
+}
+
+message getProductByStoreCategoriesByAdminRequest {
+    string idCategories = 1;
+    string idStore = 2;
+}
+
+message getProductInfoByCategoriesAdmin {
+    string _id = 1;
+    string storeId = 2;
+    string name = 3;
+    string description = 4;
+    int32 quantity = 5;
+    int32 price = 6;
+    repeated imageProduct images = 7;
+    int32 vetic = 8;
+    int32 special = 9;
+    string model = 10;
+    int32 stock_status = 11;
+    int32 viewed = 12;
+    int32 rate = 13;
+    bool status = 14;
+    string createdAt = 15;
+}
+
+message getProductByStoreCategoriesByAdminResponse {
+    string name = 1;
+    string description = 2;
+    imageProduct image = 3;
+    imageProduct icon = 4;
+    string color = 5;
+    bool status = 6;
+    string createdAt = 7;
+    repeated getProductInfoByCategoriesAdmin products = 8;
+    string _id = 9;
+}
+
+message getCategoriesStoreByAdminRequest {
+    string id = 1;
+}
+
+message getCategoriesStoreByAdmin {
+    string name = 1;
+    string description = 2;
+    imageProduct image = 3;
+    imageProduct icon = 4;
+    string color = 5;
+    bool status = 6;
+    string createdAt = 7;
+    string _id = 8;
+    int32 index = 9;
+}
+
+message getCategoriesStoreByAdminPage {
+    string name = 1;
+    string description = 2;
+    imageProduct image = 3;
+    imageProduct icon = 4;
+    string color = 5;
+    bool status = 6;
+    string createdAt = 7;
+    string _id = 8;
+    int32 index = 9;
+    repeated getCategoriesStoreByAdmin children = 10;
+}
+
+message getCategoriesStoreByAdminResponse {
+    repeated getCategoriesStoreByAdminPage categories = 1;
+}
+
+message createCategoriesStoreRequest {
+    string storeId = 1;
+    repeated string categoriesId = 2;
+}
+
+message createCategoriesStoreResponse {
+    bool payload = 1;
+}

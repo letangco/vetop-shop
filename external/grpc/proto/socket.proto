@@ -1,0 +1,18 @@
+syntax = "proto3";
+package socket;
+
+service Socket {
+    rpc Example (ExampleRequest) returns (ExampleResponse);
+}
+
+message Empty {}
+
+message ExampleRequest {
+    string name = 1;
+}
+
+
+message ExampleResponse {
+    string name = 1;
+}
+

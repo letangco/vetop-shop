@@ -1,0 +1,293 @@
+2021-03-23T09:26:18.647Z info: GRPC Shop Running: 0.0.0.0:9011
+2021-03-23T09:26:18.686Z info: Redis client connection ready
+2021-03-23T09:26:18.705Z info: RabbitMQ connection ready !!!
+2021-03-23T09:26:18.714Z info: Backend service is running on port: 8012!
+2021-03-23T09:26:18.998Z info: Mongodb connected
+2021-03-23T09:26:19.364Z info: dummySomeData done
+2021-03-23T09:29:37.407Z info: GRPC Shop Running: 0.0.0.0:9011
+2021-03-23T09:29:37.424Z info: Redis client connection ready
+2021-03-23T09:29:37.434Z info: RabbitMQ connection ready !!!
+2021-03-23T09:29:37.440Z info: Backend service is running on port: 8012!
+2021-03-23T09:29:37.735Z info: Mongodb connected
+2021-03-23T09:29:38.084Z info: dummySomeData done
+2021-03-23T09:29:59.013Z info: GRPC Shop Running: 0.0.0.0:9011
+2021-03-23T09:29:59.031Z info: Redis client connection ready
+2021-03-23T09:29:59.039Z info: RabbitMQ connection ready !!!
+2021-03-23T09:29:59.045Z info: Backend service is running on port: 8012!
+2021-03-23T09:29:59.299Z info: Mongodb connected
+2021-03-23T09:29:59.651Z info: dummySomeData done
+2021-03-23T09:37:26.016Z info: GRPC Shop Running: 0.0.0.0:9011
+2021-03-23T09:37:26.036Z info: Redis client connection ready
+2021-03-23T09:37:26.045Z info: RabbitMQ connection ready !!!
+2021-03-23T09:37:26.050Z info: Backend service is running on port: 8012!
+2021-03-23T09:37:26.324Z info: Mongodb connected
+2021-03-23T09:37:26.695Z info: dummySomeData done
+2021-03-23T11:07:07.909Z info: GRPC Shop Running: 0.0.0.0:9011
+2021-03-23T11:07:07.925Z info: Redis client connection ready
+2021-03-23T11:07:07.952Z info: RabbitMQ connection ready !!!
+2021-03-23T11:07:07.962Z info: Backend service is running on port: 8012!
+2021-03-23T11:07:08.216Z info: Mongodb connected
+2021-03-23T11:07:08.577Z info: dummySomeData done
+2021-03-24T10:18:30.823Z info: GRPC Shop Running: 0.0.0.0:9011
+2021-03-24T10:18:30.914Z info: Redis client connection ready
+2021-03-24T10:18:31.109Z info: RabbitMQ connection ready !!!
+2021-03-24T10:18:31.136Z info: Backend service is running on port: 8012!
+2021-03-24T10:18:31.231Z info: Mongodb connected
+2021-03-24T10:18:31.623Z info: dummySomeData done
+2021-03-25T04:25:16.418Z info: GRPC Shop Running: 0.0.0.0:9011
+2021-03-25T04:25:16.445Z info: Redis client connection ready
+2021-03-25T04:25:16.458Z info: RabbitMQ connection ready !!!
+2021-03-25T04:25:16.472Z info: Backend service is running on port: 8012!
+2021-03-25T04:25:16.768Z info: Mongodb connected
+2021-03-25T04:25:17.172Z info: dummySomeData done
+2021-03-25T04:51:00.019Z info: GRPC Shop Running: 0.0.0.0:9011
+2021-03-25T04:51:00.038Z info: Redis client connection ready
+2021-03-25T04:51:00.048Z info: RabbitMQ connection ready !!!
+2021-03-25T04:51:00.054Z info: Backend service is running on port: 8012!
+2021-03-25T04:51:00.331Z info: Mongodb connected
+2021-03-25T04:51:00.699Z info: dummySomeData done
+2021-04-08T03:27:22.789Z info: GRPC Shop Running: 0.0.0.0:9011
+2021-04-08T03:27:22.808Z info: Redis client connection ready
+2021-04-08T03:27:22.822Z info: Mongodb connected
+2021-04-08T03:27:22.850Z info: RabbitMQ connection ready !!!
+2021-04-08T03:27:22.856Z info: Backend service is running on port: 8012!
+2021-04-08T03:27:23.101Z info: dummySomeData done
+2021-04-08T03:29:57.836Z info: GRPC Shop Running: 0.0.0.0:9011
+2021-04-08T03:29:57.854Z info: Redis client connection ready
+2021-04-08T03:29:57.866Z info: Mongodb connected
+2021-04-08T03:29:57.884Z info: RabbitMQ connection ready !!!
+2021-04-08T03:29:57.906Z info: Backend service is running on port: 8012!
+2021-04-08T03:29:57.920Z info: dummySomeData done
+2021-04-08T03:33:05.941Z info: GRPC Shop Running: 0.0.0.0:9011
+2021-04-08T03:33:05.959Z info: Redis client connection ready
+2021-04-08T03:33:05.971Z info: Mongodb connected
+2021-04-08T03:33:05.998Z info: RabbitMQ connection ready !!!
+2021-04-08T03:33:06.017Z info: Backend service is running on port: 8012!
+2021-04-08T03:33:06.027Z info: dummySomeData done
+2021-04-08T03:33:21.235Z info: GRPC Shop Running: 0.0.0.0:9011
+2021-04-08T03:33:21.252Z info: Redis client connection ready
+2021-04-08T03:33:21.263Z info: Mongodb connected
+2021-04-08T03:33:21.293Z info: RabbitMQ connection ready !!!
+2021-04-08T03:33:21.307Z info: Backend service is running on port: 8012!
+2021-04-08T03:33:21.316Z info: dummySomeData done
+2021-04-08T03:34:39.213Z info: GRPC Shop Running: 0.0.0.0:9011
+2021-04-08T03:34:39.234Z info: Redis client connection ready
+2021-04-08T03:34:39.247Z info: Mongodb connected
+2021-04-08T03:34:39.266Z info: RabbitMQ connection ready !!!
+2021-04-08T03:34:39.291Z info: Backend service is running on port: 8012!
+2021-04-08T03:34:39.305Z info: dummySomeData done
+2021-04-08T03:35:37.247Z info: GRPC Shop Running: 0.0.0.0:9011
+2021-04-08T03:35:37.264Z info: Redis client connection ready
+2021-04-08T03:35:37.275Z info: Mongodb connected
+2021-04-08T03:35:37.297Z info: RabbitMQ connection ready !!!
+2021-04-08T03:35:37.315Z info: Backend service is running on port: 8012!
+2021-04-08T03:35:37.322Z info: dummySomeData done
+2021-04-08T03:44:03.171Z info: GRPC Shop Running: 0.0.0.0:9011
+2021-04-08T03:44:03.193Z info: Redis client connection ready
+2021-04-08T03:44:03.203Z info: Mongodb connected
+2021-04-08T03:44:03.224Z info: RabbitMQ connection ready !!!
+2021-04-08T03:44:03.240Z info: Backend service is running on port: 8012!
+2021-04-08T03:44:03.248Z info: dummySomeData done
+2021-04-08T03:51:59.101Z info: GRPC Shop Running: 0.0.0.0:9011
+2021-04-08T03:51:59.123Z info: Redis client connection ready
+2021-04-08T03:51:59.157Z info: Mongodb connected
+2021-04-08T03:51:59.186Z info: RabbitMQ connection ready !!!
+2021-04-08T03:51:59.201Z info: Backend service is running on port: 8012!
+2021-04-08T03:51:59.209Z info: dummySomeData done
+2021-04-08T03:53:18.694Z info: GRPC Shop Running: 0.0.0.0:9011
+2021-04-08T03:53:18.714Z info: Redis client connection ready
+2021-04-08T03:53:18.725Z info: Mongodb connected
+2021-04-08T03:53:18.747Z info: RabbitMQ connection ready !!!
+2021-04-08T03:53:18.763Z info: Backend service is running on port: 8012!
+2021-04-08T03:53:18.773Z info: dummySomeData done
+2021-04-08T03:54:59.558Z info: GRPC Shop Running: 0.0.0.0:9011
+2021-04-08T03:54:59.575Z info: Redis client connection ready
+2021-04-08T03:54:59.588Z info: Mongodb connected
+2021-04-08T03:54:59.610Z info: RabbitMQ connection ready !!!
+2021-04-08T03:54:59.628Z info: Backend service is running on port: 8012!
+2021-04-08T03:54:59.639Z info: dummySomeData done
+2021-04-08T03:56:25.241Z info: GRPC Shop Running: 0.0.0.0:9011
+2021-04-08T03:56:25.256Z info: Redis client connection ready
+2021-04-08T03:56:25.268Z info: Mongodb connected
+2021-04-08T03:56:25.291Z info: RabbitMQ connection ready !!!
+2021-04-08T03:56:25.306Z info: Backend service is running on port: 8012!
+2021-04-08T03:56:25.315Z info: dummySomeData done
+2021-04-08T03:57:00.918Z info: GRPC Shop Running: 0.0.0.0:9011
+2021-04-08T03:57:00.972Z info: Redis client connection ready
+2021-04-08T03:57:00.997Z info: Mongodb connected
+2021-04-08T03:57:01.068Z info: RabbitMQ connection ready !!!
+2021-04-08T03:57:01.107Z info: Backend service is running on port: 8012!
+2021-04-08T03:57:01.124Z info: dummySomeData done
+2021-04-08T03:57:37.815Z info: GRPC Shop Running: 0.0.0.0:9011
+2021-04-08T03:57:37.833Z info: Redis client connection ready
+2021-04-08T03:57:37.844Z info: Mongodb connected
+2021-04-08T03:57:37.861Z info: RabbitMQ connection ready !!!
+2021-04-08T03:57:37.883Z info: Backend service is running on port: 8012!
+2021-04-08T03:57:37.891Z info: dummySomeData done
+2021-04-08T03:58:06.012Z info: GRPC Shop Running: 0.0.0.0:9011
+2021-04-08T03:58:06.031Z info: Redis client connection ready
+2021-04-08T03:58:06.044Z info: Mongodb connected
+2021-04-08T03:58:06.069Z info: RabbitMQ connection ready !!!
+2021-04-08T03:58:06.088Z info: Backend service is running on port: 8012!
+2021-04-08T03:58:06.099Z info: dummySomeData done
+2021-04-08T03:59:52.967Z info: GRPC Shop Running: 0.0.0.0:9011
+2021-04-08T03:59:52.984Z info: Redis client connection ready
+2021-04-08T03:59:52.996Z info: Mongodb connected
+2021-04-08T03:59:53.019Z info: RabbitMQ connection ready !!!
+2021-04-08T03:59:53.036Z info: Backend service is running on port: 8012!
+2021-04-08T03:59:53.046Z info: dummySomeData done
+2021-04-08T04:00:43.320Z info: GRPC Shop Running: 0.0.0.0:9011
+2021-04-08T04:00:43.336Z info: Redis client connection ready
+2021-04-08T04:00:43.346Z info: Mongodb connected
+2021-04-08T04:00:43.369Z info: RabbitMQ connection ready !!!
+2021-04-08T04:00:43.383Z info: Backend service is running on port: 8012!
+2021-04-08T04:00:43.393Z info: dummySomeData done
+2021-04-08T04:02:38.264Z info: GRPC Shop Running: 0.0.0.0:9011
+2021-04-08T04:02:38.281Z info: Redis client connection ready
+2021-04-08T04:02:38.293Z info: Mongodb connected
+2021-04-08T04:02:38.316Z info: RabbitMQ connection ready !!!
+2021-04-08T04:02:38.333Z info: Backend service is running on port: 8012!
+2021-04-08T04:02:38.342Z info: dummySomeData done
+2021-04-08T04:02:58.729Z info: GRPC Shop Running: 0.0.0.0:9011
+2021-04-08T04:02:58.746Z info: Redis client connection ready
+2021-04-08T04:02:58.758Z info: Mongodb connected
+2021-04-08T04:02:58.786Z info: RabbitMQ connection ready !!!
+2021-04-08T04:02:58.809Z info: Backend service is running on port: 8012!
+2021-04-08T04:02:58.819Z info: dummySomeData done
+2021-04-08T04:03:12.768Z info: GRPC Shop Running: 0.0.0.0:9011
+2021-04-08T04:03:12.789Z info: Redis client connection ready
+2021-04-08T04:03:12.803Z info: Mongodb connected
+2021-04-08T04:03:12.825Z info: RabbitMQ connection ready !!!
+2021-04-08T04:03:12.841Z info: Backend service is running on port: 8012!
+2021-04-08T04:03:12.850Z info: dummySomeData done
+2021-04-08T04:03:29.240Z info: GRPC Shop Running: 0.0.0.0:9011
+2021-04-08T04:03:29.257Z info: Redis client connection ready
+2021-04-08T04:03:29.268Z info: Mongodb connected
+2021-04-08T04:03:29.290Z info: RabbitMQ connection ready !!!
+2021-04-08T04:03:29.306Z info: Backend service is running on port: 8012!
+2021-04-08T04:03:29.316Z info: dummySomeData done
+2021-04-08T04:03:48.699Z info: GRPC Shop Running: 0.0.0.0:9011
+2021-04-08T04:03:48.717Z info: Redis client connection ready
+2021-04-08T04:03:48.729Z info: Mongodb connected
+2021-04-08T04:03:48.752Z info: RabbitMQ connection ready !!!
+2021-04-08T04:03:48.770Z info: Backend service is running on port: 8012!
+2021-04-08T04:03:48.781Z info: dummySomeData done
+2021-04-08T04:04:22.037Z info: GRPC Shop Running: 0.0.0.0:9011
+2021-04-08T04:04:22.053Z info: Redis client connection ready
+2021-04-08T04:04:22.066Z info: Mongodb connected
+2021-04-08T04:04:22.089Z info: RabbitMQ connection ready !!!
+2021-04-08T04:04:22.104Z info: Backend service is running on port: 8012!
+2021-04-08T04:04:22.114Z info: dummySomeData done
+2021-04-08T04:05:09.323Z info: GRPC Shop Running: 0.0.0.0:9011
+2021-04-08T04:05:09.348Z info: Redis client connection ready
+2021-04-08T04:05:09.378Z info: Mongodb connected
+2021-04-08T04:05:09.398Z info: RabbitMQ connection ready !!!
+2021-04-08T04:05:09.416Z info: Backend service is running on port: 8012!
+2021-04-08T04:05:09.425Z info: dummySomeData done
+2021-04-08T04:05:56.011Z info: GRPC Shop Running: 0.0.0.0:9011
+2021-04-08T04:05:56.027Z info: Redis client connection ready
+2021-04-08T04:05:56.038Z info: Mongodb connected
+2021-04-08T04:05:56.059Z info: RabbitMQ connection ready !!!
+2021-04-08T04:05:56.074Z info: Backend service is running on port: 8012!
+2021-04-08T04:05:56.085Z info: dummySomeData done
+2021-04-08T04:06:20.089Z info: GRPC Shop Running: 0.0.0.0:9011
+2021-04-08T04:06:20.106Z info: Redis client connection ready
+2021-04-08T04:06:20.117Z info: Mongodb connected
+2021-04-08T04:06:20.134Z info: RabbitMQ connection ready !!!
+2021-04-08T04:06:20.153Z info: Backend service is running on port: 8012!
+2021-04-08T04:06:20.162Z info: dummySomeData done
+2021-04-08T04:07:01.149Z info: GRPC Shop Running: 0.0.0.0:9011
+2021-04-08T04:07:01.164Z info: Redis client connection ready
+2021-04-08T04:07:01.176Z info: Mongodb connected
+2021-04-08T04:07:01.197Z info: RabbitMQ connection ready !!!
+2021-04-08T04:07:01.213Z info: Backend service is running on port: 8012!
+2021-04-08T04:07:01.222Z info: dummySomeData done
+2021-04-08T04:07:19.286Z info: GRPC Shop Running: 0.0.0.0:9011
+2021-04-08T04:07:19.303Z info: Redis client connection ready
+2021-04-08T04:07:19.314Z info: Mongodb connected
+2021-04-08T04:07:19.337Z info: RabbitMQ connection ready !!!
+2021-04-08T04:07:19.353Z info: Backend service is running on port: 8012!
+2021-04-08T04:07:19.361Z info: dummySomeData done
+2021-04-21T04:24:05.760Z info: GRPC Shop Running: 0.0.0.0:9011
+2021-04-21T04:24:05.780Z info: Redis client connection ready
+2021-04-21T04:24:05.794Z info: Mongodb connected
+2021-04-21T04:24:05.822Z info: RabbitMQ connection ready !!!
+2021-04-21T04:24:05.878Z info: Backend service is running on port: 8012!
+2021-04-21T04:24:05.910Z info: dummySomeData done
+2021-04-21T04:24:23.706Z info: GRPC Shop Running: 0.0.0.0:9011
+2021-04-21T04:24:23.733Z info: Redis client connection ready
+2021-04-21T04:24:23.747Z info: Mongodb connected
+2021-04-21T04:24:23.775Z info: RabbitMQ connection ready !!!
+2021-04-21T04:24:23.806Z info: Backend service is running on port: 8012!
+2021-04-21T04:24:23.820Z info: dummySomeData done
+2021-04-21T04:25:52.466Z info: GRPC Shop Running: 0.0.0.0:9011
+2021-04-21T04:25:52.504Z info: Redis client connection ready
+2021-04-21T04:25:52.533Z info: Mongodb connected
+2021-04-21T04:25:52.577Z info: RabbitMQ connection ready !!!
+2021-04-21T04:25:52.637Z info: Backend service is running on port: 8012!
+2021-04-21T04:25:52.655Z info: dummySomeData done
+2021-04-21T05:06:08.104Z info: GRPC Shop Running: 0.0.0.0:9011
+2021-04-21T05:06:08.154Z info: Redis client connection ready
+2021-04-21T05:06:08.194Z info: Mongodb connected
+2021-04-21T05:06:08.248Z info: RabbitMQ connection ready !!!
+2021-04-21T05:06:08.273Z info: Backend service is running on port: 8012!
+2021-04-21T05:06:08.289Z info: dummySomeData done
+2021-04-21T05:06:41.319Z info: GRPC Shop Running: 0.0.0.0:9011
+2021-04-21T05:06:41.347Z info: Redis client connection ready
+2021-04-21T05:06:41.364Z info: Mongodb connected
+2021-04-21T05:06:41.388Z info: RabbitMQ connection ready !!!
+2021-04-21T05:06:41.413Z info: Backend service is running on port: 8012!
+2021-04-21T05:06:41.425Z info: dummySomeData done
+2021-04-22T07:37:53.057Z info: GRPC Shop Running: 0.0.0.0:9011
+2021-04-22T07:37:53.075Z info: Redis client connection ready
+2021-04-22T07:37:53.087Z info: Mongodb connected
+2021-04-22T07:37:53.111Z info: RabbitMQ connection ready !!!
+2021-04-22T07:37:53.132Z info: Backend service is running on port: 8012!
+2021-04-22T07:37:53.146Z info: dummySomeData done
+2021-04-29T09:17:38.926Z info: GRPC Shop Running: 0.0.0.0:9011
+2021-04-29T09:17:38.944Z info: Redis client connection ready
+2021-04-29T09:17:38.956Z info: Mongodb connected
+2021-04-29T09:17:38.983Z info: RabbitMQ connection ready !!!
+2021-04-29T09:17:39.001Z info: Backend service is running on port: 8012!
+2021-04-29T09:17:39.012Z info: dummySomeData done
+2021-04-29T13:28:31.356Z error: Redis client connection error:
+2021-04-29T13:28:31.367Z error: Redis connection to localhost:6379 failed - read ECONNRESET
+2021-04-29T13:28:33.652Z error: Redis client connection error:
+2021-04-29T13:28:33.652Z error: Redis connection to localhost:6379 failed - connect ECONNREFUSED 127.0.0.1:6379
+2021-04-29T13:28:36.056Z error: Redis client connection error:
+2021-04-29T13:28:36.057Z error: Redis connection to localhost:6379 failed - connect ECONNREFUSED 127.0.0.1:6379
+2021-04-29T13:28:38.707Z error: Redis client connection error:
+2021-04-30T06:57:16.818Z info: GRPC Shop Running: 0.0.0.0:9011
+2021-04-30T06:57:16.837Z info: Redis client connection ready
+2021-04-30T06:57:16.854Z info: Mongodb connected
+2021-04-30T06:57:16.877Z info: RabbitMQ connection ready !!!
+2021-04-30T06:57:16.895Z info: Backend service is running on port: 8012!
+2021-04-30T06:57:16.906Z info: dummySomeData done
+2021-04-30T07:58:41.521Z error: Redis client connection error:
+2021-04-30T07:58:41.536Z error: Redis connection to localhost:6379 failed - read ECONNRESET
+2021-04-30T07:58:43.796Z error: Redis client connection error:
+2021-04-30T07:58:43.798Z error: Redis connection to localhost:6379 failed - connect ECONNREFUSED 127.0.0.1:6379
+2021-04-30T07:58:46.157Z error: Redis client connection error:
+2021-04-30T07:58:46.158Z error: Redis connection to localhost:6379 failed - connect ECONNREFUSED 127.0.0.1:6379
+2021-05-04T07:29:38.890Z info: GRPC Shop Running: 0.0.0.0:9011
+2021-05-04T07:29:38.911Z info: Redis client connection ready
+2021-05-04T07:29:38.926Z info: Mongodb connected
+2021-05-04T07:29:38.950Z info: RabbitMQ connection ready !!!
+2021-05-04T07:29:38.962Z info: Backend service is running on port: 8012!
+2021-05-04T07:29:39.000Z info: dummySomeData done
+2021-11-25T11:01:35.558Z info: GRPC Shop Running: 0.0.0.0:9011
+2021-11-25T11:01:35.564Z info: Backend service is running on port: 8012!
+2021-11-25T11:01:35.574Z error: Redis client connection error:
+2021-11-25T11:01:35.574Z error: Redis connection to localhost:6379 failed - connect ECONNREFUSED 127.0.0.1:6379
+2021-11-25T11:01:35.784Z error: Redis client connection error:
+2021-11-25T11:01:35.786Z error: Redis connection to localhost:6379 failed - connect ECONNREFUSED 127.0.0.1:6379
+2021-11-25T11:01:36.140Z error: Redis client connection error:
+2021-11-25T11:01:36.140Z error: Redis connection to localhost:6379 failed - connect ECONNREFUSED 127.0.0.1:6379
+2021-11-25T11:01:36.729Z error: Redis client connection error:
+2021-11-25T11:01:36.730Z error: Redis connection to localhost:6379 failed - connect ECONNREFUSED 127.0.0.1:6379
+2021-11-25T11:01:37.724Z error: Redis client connection error:
+2021-11-25T11:01:37.725Z error: Redis connection to localhost:6379 failed - connect ECONNREFUSED 127.0.0.1:6379
+2021-11-25T11:01:39.414Z error: Redis client connection error:
+2021-11-25T11:01:39.415Z error: Redis connection to localhost:6379 failed - connect ECONNREFUSED 127.0.0.1:6379
+2021-11-25T11:01:42.270Z error: Redis client connection error:
+2021-11-25T11:01:42.271Z error: Redis connection to localhost:6379 failed - connect ECONNREFUSED 127.0.0.1:6379

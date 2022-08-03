@@ -1,0 +1,37 @@
+syntax = "proto3";
+package notification;
+
+service Notification {
+    rpc Example (ExampleRequest) returns (ExampleResponse);
+    rpc createBlockUser (createBlockUserRequest) returns (createBlockUserResponse);
+    rpc updateNotify (updateNotifyRequest) returns (updateNotifyResponse);
+}
+
+message updateNotifyRequest {
+    string id = 1;
+    string code = 2;
+}
+
+message updateNotifyResponse {
+    bool success = 1;
+}
+
+message createBlockUserRequest {
+    string blockerId = 1;
+    string targetId = 2;
+    string type = 3;
+}
+
+message createBlockUserResponse {
+    bool success = 1;
+}
+
+message Empty {}
+
+message ExampleRequest {
+    string name = 1;
+}
+
+message ExampleResponse {
+    string name = 1;
+}

@@ -1,0 +1,282 @@
+syntax = "proto3";
+package user;
+
+service User {
+    rpc getUserInfo (getUserInfoRequest) returns (getUserInfoResponse);
+    rpc getStoreInfo (getStoreInfoRequest) returns (getStoreInfoResponse);
+    rpc addCategoryToStore (addCategoryToStoreRequest) returns (addCategoryToStoreResponse);
+    rpc getAdminInfo (getAdminInfoRequest) returns (getAdminInfoResponse);
+    rpc getStaffInfo (getStaffInfoRequest) returns (getStaffInfoResponse);
+    rpc getUserInfoByRefer (getUserInfoByReferRequest) returns (getUserInfoResponse);
+    rpc updateCategoryStore (updateCategoryStoreRequest) returns (updateCategoryStoreResponse);
+    rpc getListUserInfo (getListUserInfoRequest) returns (getListUserInfoResponse);
+    rpc getUserInfoByCode (getUserInfoByCodeRequest) returns (getUserInfoResponse);
+    rpc ratingStoreByStar (ratingStoreByStarRequest) returns (ratingStoreByStarResponse);
+    rpc getListUserInfoByArray (getListUserInfoByArrayRequest) returns (getListUserInfoResponse);
+    rpc updateTotalProductStore (updateTotalProductStoreRequest) returns (updateTotalProductStoreResponse);
+    rpc getUserInfoByAdmin (getUserInfoRequest) returns (getUserInfoByAdminResponse);
+    rpc getStoreInfoByAdmin (getStoreInfoRequest) returns (getStoreInfoByAdminResponse);
+    rpc getBankById (getBankByIdRequest) returns (getBankByIdResponse);
+    rpc getUserByIdStore (getUserByIdStoreRequest) returns (getUserInfoByAdminResponse);
+    rpc updateRatingSim (updateRatingSimRequest) returns (updateRatingSimResponse);
+    rpc updatePaymentLimitFromOrder (updatePaymentLimitFromOrderRequest) returns (updatePaymentLimitFromOrderResponse);
+    rpc updateNewCodeUser (updateNewCodeUserRequest) returns (updateNewCodeUserResponse); 
+    rpc updatePaymentLimitStaff (updatePaymentLimitStaffRequest) returns (updatePaymentLimitStaffResponse);
+    rpc getStoreInfoByCode (getStoreInfoByCodeRequest) returns (getStoreInfoByCodeResponse);
+}
+
+message getStoreInfoByCodeRequest {
+    string code = 1;
+}
+
+message getStoreInfoByCodeResponse {
+    string _id = 1;
+    string name = 2;
+    string phone = 3;
+    string avatar = 4;
+    int32 online = 5;
+    string code = 7;
+    string address = 8;
+    string userId = 9;
+}
+
+message updatePaymentLimitStaffRequest {
+    string staffId = 1;
+    int32 value = 2;
+}
+
+message updatePaymentLimitStaffResponse {
+    bool success = 1;
+}
+
+message updateNewCodeUserRequest {
+    string code = 1;
+    string user = 2;
+}
+
+message updateNewCodeUserResponse {
+    bool success = 1;
+}
+
+message updatePaymentLimitFromOrderRequest {
+    string staffId = 1;
+    string storeId = 2;
+    int32 paymentLimit = 3;
+}
+
+message updatePaymentLimitFromOrderResponse {
+    bool success = 1;
+}
+
+message updateRatingSimRequest {
+    string _id = 1;
+    string type = 2;
+    int32 rating = 3;
+}
+
+message updateRatingSimResponse {
+    bool success = 1;
+}
+
+message getBankByIdRequest {
+    string bankInfoId = 1;
+}
+
+message getUserByIdStoreRequest {
+    string storeId = 1;
+}
+
+message getBankByIdResponse {
+    string _id = 1;
+    string name = 2;
+    string bankCode = 3;
+    string bankBranch = 4;
+    string ownerName = 5;
+    string accountNumber = 6;
+}
+
+message updateTotalProductStoreRequest {
+    string storeId = 1;
+    int32 totalProduct = 2;
+}
+
+message updateTotalProductStoreResponse {
+    string success = 1;
+}
+
+message ratingStoreByStarRequest {
+    string _id = 1;
+    int32 star = 2;
+}
+
+message getListUserInfoByArrayRequest {
+    string idUsers = 1;
+}
+
+message ratingStoreByStarResponse {
+    string success = 1;
+}
+
+message getUserInfoByCodeRequest {
+    string code = 1;
+}
+
+message updateCategoryStoreRequest {
+    string storeId = 1;
+    string categoriesId = 2;
+    string searchStringCategory = 3;
+}
+
+message updateCategoryStoreResponse {
+    string success = 1;
+}
+
+message getListUserInfoRequest {
+    repeated string users = 1;
+}
+
+message getListUserInfoResponse {
+    repeated getUserInfoResponse listUsers = 1;
+}
+
+message getStaffInfoRequest {
+    string id = 1;
+}
+
+message getStaffInfoResponse {
+    string _id = 1;
+    string userId = 2;
+    string storeId = 3;
+    int32 paymentLimit = 4;
+}
+
+message addCategoryToStoreRequest {
+    string id = 1;
+    string listCate = 2;
+}
+
+message addCategoryToStoreResponse {
+    bool success = 1;
+}
+
+message getUserInfoRequest {
+    string id = 1;
+}
+
+message getStoreInfoRequest {
+    string id = 1;
+}
+
+message getAdminInfoRequest {
+    string id = 1;
+}
+
+message getUserInfoResponse {
+    string _id = 1;
+    string fullName = 2;
+    string phone = 3;
+    string avatar = 4;
+    string online = 5;
+    string refer = 6;
+    string code = 7;
+    string address = 8;
+    string store = 9;
+    int32 ratingSim = 10;
+}
+
+message getStoreInfoResponse {
+    string _id = 1;
+    string code = 2;
+    string name = 3;
+    string description = 4;
+    string address = 5;
+    string phone = 6;
+    string userId = 7;
+    string avatar = 8;
+    int32 ratingSim = 9;
+}
+
+message getUserInfoByReferRequest {
+    string refer = 1;
+}
+
+message getAdminInfoResponse {
+    string _id = 1;
+    string fullName = 2;
+    string userName = 3;
+    string email = 4;
+}
+
+message imageAvatar {
+    string name = 1;
+    string large = 2;
+    string medium = 3;
+    string small = 4;
+}
+
+message getUserInfoByAdminResponse {
+    string _id = 1;
+    string code = 2;
+    string email = 3;
+    string phone = 4;
+    string fullName = 5;
+    string address = 6;
+    int32 status = 7;
+    int32 rate = 8;
+    int32 online = 9;
+    string identity = 10;
+    int32 gender = 11;
+    string dob = 12;
+    imageAvatar avatar = 13;
+    string createdAt = 14;
+}
+
+message locStoreResponse {
+    string type = 1;
+    repeated string coordinates = 2;
+}
+
+message countryResponse {
+    string _id = 1;
+    string name = 2;
+    string ISO2 = 3;
+    string ISO3 = 4;
+    string currencyCode = 5;
+    bool status = 6;
+}
+
+message stateResponse {
+    string _id = 1;
+    string name = 2;
+    string IOS2 = 3;
+    string IOS3 = 4;
+    bool status = 6;
+}
+
+message companyResponse {
+    string taxCode = 1;
+    string name = 2;
+    string founded = 3;
+    string founder = 4;
+    string industry = 5;
+}
+
+message getStoreInfoByAdminResponse {
+    string _id = 1;
+    string code = 2;
+    string name = 3;
+    string description = 4;
+    string address = 5;
+    string phone = 6;
+    int32 status = 7;
+    imageAvatar avatar = 8;
+    int32 rate = 9;
+    int32 totalProduct = 10;
+    int32 online = 11;
+    string createdAt = 12;
+    locStoreResponse loc = 13;
+    repeated string storeCategories = 14;
+    countryResponse countryId = 15;
+    stateResponse stateId = 16;
+    companyResponse company = 17;
+}

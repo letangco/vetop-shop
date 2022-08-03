@@ -1,0 +1,198 @@
+syntax = "proto3";
+package wallet;
+
+service Wallet {
+    rpc updateVeticFromOrder (updateVeticFromOrderRequest) returns (updateVeticFromOrderResponse);
+    rpc createWallet (createWalletRequest) returns (createWalletResponse);
+    rpc getWallet (getWalletRequest) returns (getWalletResponse);
+    rpc getWalletSim (getWalletSimRequest) returns (getWalletSimResponse);
+    rpc getSetting (getSettingRequest) returns (getSettingResponse);
+    rpc createTransaction (createTransactionRequest) returns (createTransactionResponse);
+    rpc createWalletSim (createWalletSimRequest) returns (createWalletSimResponse);
+    rpc updateWalletFromSim (updateWalletUserFromSimRequest) returns (updateWalletUserFromSimResponse); 
+    rpc updateVeticFromOrderSim (updateVeticFromOrderSimRequest) returns (updateVeticFromOrderSimResponse);
+    rpc createTransactionTopUp (createTransactionTopUpRequest) returns (createTransactionTopUpResponse); 
+    rpc paymentPaymeCreate (paymentPaymeCreateRequest) returns (paymentPaymeCreateResponse);
+    rpc getTransactionChangeCode (getTransactionChangeCodeRequest) returns (getTransactionChangeCodeResponse);
+    rpc getIdFANAdmin (getIdFANRequest) returns (getIdFANAdminResponse);
+    rpc notificationCreatePendingOrder (createPendingOrderRequest) returns (createPendingOrderResponse);
+    rpc createPaymentVNPayOrder (createPaymentVNPayOrderRequest) returns (createPaymentVNPayOrderResponse);
+}
+
+message createPaymentVNPayOrderRequest {
+    string _id = 1;
+    string store = 2;
+    string userId = 3;
+    int32 invoice = 4;
+    int32 total = 5;
+    int32 special = 6;
+    int32 vetic = 7;
+    string bankCode = 8;
+}
+
+message createPaymentVNPayOrderResponse {
+    string url = 1;
+    bool success = 2;
+}
+
+message createPendingOrderRequest {
+    string _id = 1;
+    string store = 2;
+    string userId = 3;
+    int32 invoice = 4;
+    int32 total = 5;
+    int32 special = 6;
+    int32 vetic = 7;
+}
+
+message createPendingOrderResponse {
+    bool success = 1;
+}
+
+message getTransactionChangeCodeRequest {
+    string userId = 1;
+}
+
+message getTransactionChangeCodeResponse {
+    string _id = 1;
+    string transactionPayme = 2;
+    string code = 3;
+    int32 value = 4;
+    int32 status = 5;
+}
+
+message paymentPaymeCreateRequest {
+    string user = 1;
+    int32 amount = 2;
+    string code = 3;
+}
+
+message paymentPaymeCreateResponse {
+    string link = 1;
+}
+
+message createTransactionTopUpRequest {
+    string receiverId = 1;
+    string senderId = 2;
+    int32 value = 4;
+    int32 type = 5;
+    int32 currency = 6;
+}
+
+message createTransactionTopUpResponse {
+    bool success = 1;
+}
+
+message updateVeticFromOrderSimRequest {
+    string sim = 1;
+    int32 vetic = 2;
+}
+
+message updateVeticFromOrderSimResponse {
+    bool success = 1;
+}
+
+message updateWalletUserFromSimRequest {
+    string _id = 1;
+    string type = 2;
+    int32 vetic = 3;
+    int32 pin = 4;
+    int32 stock = 5;
+    int32 money = 6;
+    int32 tax = 7;
+    string sim = 8;
+}
+
+message updateWalletUserFromSimResponse {
+    bool success = 1;
+}
+
+message getWalletSimRequest {
+    string sim = 1;
+}
+
+message getWalletSimResponse {
+    string _id = 1;
+    int32 vetic = 2;
+    int32 pin = 3;
+    int32 tax = 4;
+    int32 stock = 5;
+    int32 money = 6;
+    string data = 7;
+}
+
+message createWalletSimRequest {
+    string _id = 1;
+    string type = 2;
+    int32 vetic = 3;
+    string sim = 4;
+}
+
+message createWalletSimResponse {
+    bool success = 1;
+}
+
+message createTransactionRequest {
+    string senderId = 1;
+    int32 value = 2;
+    string simId = 3;
+    int32 userType = 4;
+    int32 currency = 5;
+    int32 type = 6;
+}
+
+message createTransactionResponse {
+    bool success = 1;
+}
+
+message getSettingRequest {
+    int32 type = 1;
+}
+
+message getSettingResponse {
+    int32 value = 1;
+}
+
+message updateVeticFromOrderRequest {
+    string order = 1;
+}
+message updateVeticFromOrderResponse {
+    string success = 1;
+}
+
+message createWalletRequest {
+    string _id = 1;
+    string type = 2;
+    string refer = 3;
+}
+message createWalletResponse {
+    string wallet = 1;
+}
+
+message getWalletRequest {
+    string _id = 1;
+    string type = 2;
+}
+message getWalletResponse {
+    string wallet = 1;
+}
+
+message getIdFANRequest {
+    string _id = 1;
+}
+
+message getIdFANAdminResponse {
+    repeated getIdFanItem idfans = 1;
+    int32 totalIdFan = 2;
+    int32 totalVetic = 3;
+    int32 totalCommission = 4;
+}
+
+message getIdFanItem {
+    string _id = 1;
+    int32 total = 2;
+    int32 commission = 3;
+    string user = 4;
+    string refer = 5;
+    string createdAt = 6;
+}

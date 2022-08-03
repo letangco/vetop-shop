@@ -1,0 +1,53 @@
+version: "3.7"
+
+services:
+  app:
+    build: ./
+    container_name: tfw-backend
+    volumes:
+      - .:/app
+    tty: true
+    command:
+      - /bin/bash
+    ports:
+      - 3101:3101
+      - 9339:9339
+    expose:
+      - 3101
+      - 9339
+    links:
+      - redis:5.0.7-alpine
+  mongo:
+    image: mongo:4.2.2
+    container_name: tfw-mongo
+    restart: always
+    ports:
+      - 3138:27017
+    environment:
+      MONGO_INITDB_ROOT_USERNAME_FILE: /run/secrets/mongo/MONGO_INITDB_ROOT_USERNAME
+      MONGO_INITDB_ROOT_PASSWORD_FILE: /run/secrets/mongo/MONGO_INITDB_ROOT_PASSWORD
+      MONGO_INITDB_PASSWORD_FILE: /run/secrets/mongo/MONGO_INITDB_PASSWORD
+      MONGO_INITDB_USERNAME_FILE: /run/secrets/mongo/MONGO_INITDB_USERNAME
+      MONGO_INITDB_DATABASE_FILE: /run/secrets/mongo/MONGO_INITDB_DATABASE
+    volumes:
+      - ./mongo/data:/data/db
+      - ./mongo/secrets:/run/secrets/mongo
+      - ./mongo/entry-scripts:/docker-entrypoint-initdb.d
+  redis:
+    image: redis:5.0.7-alpine
+    container_name: tfw-redis
+    restart: always
+    volumes:
+      - ./redis/redis.conf:/usr/local/etc/redis/redis.conf
+    command: ["redis-server", "/usr/local/etc/redis/redis.conf"]
+    ports:
+      - 6489:6489
+  rabbitmq:
+    image: rabbitmq:3.8.2-management-alpine
+    container_name: tfw-rabbitmq
+    volumes:
+      - ./rabbitmq/rabbitmq_management.conf:/etc/rabbitmq/rabbitmq.conf
+      - ./rabbitmq/data:/var/lib/rabbitmq
+    ports:
+      - 5672:5672
+      - 15672:15672

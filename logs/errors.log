@@ -1,0 +1,14 @@
+2021-11-25T11:01:35.574Z error: Redis client connection error:
+2021-11-25T11:01:35.574Z error: Redis connection to localhost:6379 failed - connect ECONNREFUSED 127.0.0.1:6379
+2021-11-25T11:01:35.784Z error: Redis client connection error:
+2021-11-25T11:01:35.786Z error: Redis connection to localhost:6379 failed - connect ECONNREFUSED 127.0.0.1:6379
+2021-11-25T11:01:36.140Z error: Redis client connection error:
+2021-11-25T11:01:36.140Z error: Redis connection to localhost:6379 failed - connect ECONNREFUSED 127.0.0.1:6379
+2021-11-25T11:01:36.729Z error: Redis client connection error:
+2021-11-25T11:01:36.730Z error: Redis connection to localhost:6379 failed - connect ECONNREFUSED 127.0.0.1:6379
+2021-11-25T11:01:37.724Z error: Redis client connection error:
+2021-11-25T11:01:37.725Z error: Redis connection to localhost:6379 failed - connect ECONNREFUSED 127.0.0.1:6379
+2021-11-25T11:01:39.414Z error: Redis client connection error:
+2021-11-25T11:01:39.415Z error: Redis connection to localhost:6379 failed - connect ECONNREFUSED 127.0.0.1:6379
+2021-11-25T11:01:42.270Z error: Redis client connection error:
+2021-11-25T11:01:42.271Z error: Redis connection to localhost:6379 failed - connect ECONNREFUSED 127.0.0.1:6379
